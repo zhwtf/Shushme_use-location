@@ -260,6 +260,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     public void onRingerPermissionsClicked(View view) {
+        // need to add the permission to the manifest file
         Intent intent = new Intent(android.provider.Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS);
         startActivity(intent);
     }
